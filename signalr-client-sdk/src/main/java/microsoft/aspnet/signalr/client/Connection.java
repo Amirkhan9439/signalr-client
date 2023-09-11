@@ -214,6 +214,11 @@ public class Connection implements ConnectionBase {
     }
 
     @Override
+    public void setRequestProperty(String key, String value) {
+        mHeaders.put(key, value);
+    }
+
+    @Override
     public void reconnecting(Runnable handler) {
         mOnReconnecting = handler;
     }
