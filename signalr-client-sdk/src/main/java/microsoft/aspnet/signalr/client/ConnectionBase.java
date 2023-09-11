@@ -169,7 +169,14 @@ public interface ConnectionBase {
      * Returns the connection headers
      */
     Map<String, String> getHeaders();
-
+    
+    /**
+     * sets header
+     * /
+     * @param key
+     * @param value
+     */
+    void setRequestProperty(String key, String value);
     /**
      * Returns the Gson instance used by the connection
      */
